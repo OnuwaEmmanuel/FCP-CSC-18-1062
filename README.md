@@ -15,12 +15,10 @@ The Faculty Management System (FMS) is a web-based application designed to strea
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/UGPROJECTS-2023/FCP-CSC-18-1062.git`
-2. Navigate to the project directory: `cd faculty-management-system`
-3. - Install the Requirements: pip install -r requirements.txt
-4. - Then, make database migrations: python manage.py makemigrations
-5. - python manage.py migrate
-6. - And finally, run the application: python manage.py runserver
+1. - Install the Requirements: pip install -r requirements.txt
+2. - Then, make database migrations: python manage.py makemigrations
+3. - python manage.py migrate
+4. - And finally, run the application: python manage.py runserver
 
 ## Usage
 

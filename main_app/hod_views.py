@@ -29,7 +29,7 @@ def admin_home(request):
         subject_list.append(subject.name[:7])
         attendance_list.append(attendance_count)
 
-    # Total Subjects and students in Each Course
+    # Total Deparments and students in Each Course
     course_all = Course.objects.all()
     course_name_list = []
     subject_count_list = []
@@ -180,7 +180,7 @@ def add_subject(request):
     form = SubjectForm(request.POST or None)
     context = {
         'form': form,
-        'page_title': 'Add Subject'
+        'page_title': 'Add Department'
     }
     if request.method == 'POST':
         if form.is_valid():
@@ -235,7 +235,7 @@ def manage_subject(request):
     subjects = Subject.objects.all()
     context = {
         'subjects': subjects,
-        'page_title': 'Manage Subjects'
+        'page_title': 'Manage Departments'
     }
     return render(request, "hod_template/manage_subject.html", context)
 
@@ -368,7 +368,7 @@ def edit_subject(request, subject_id):
     context = {
         'form': form,
         'subject_id': subject_id,
-        'page_title': 'Edit Subject'
+        'page_title': 'Edit Department'
     }
     if request.method == 'POST':
         if form.is_valid():

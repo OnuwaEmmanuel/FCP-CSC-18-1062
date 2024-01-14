@@ -14,7 +14,7 @@ The Faculty Management System (FMS) is a web-based application designed to strea
 - **User-Friendly Interface:** Intuitive and responsive interface for seamless navigation.
 
 # Installation
-
+ USING VISUAL STUDIO CODE
 1. - Install the Requirements: pip install -r requirements.txt
 2. - Then, make database migrations: python manage.py makemigrations
 3. - python manage.py migrate
